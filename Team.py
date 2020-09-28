@@ -5,6 +5,7 @@ import SpearMan
 from typing import List
 import numpy as np
 
+
 class Team:
     name = "Team"
     lanista = Lanista("Marcus", 42)
@@ -15,7 +16,7 @@ class Team:
         self.lanista = lanista
         self.gladiators = gladiators
 
-    def get_random_gladiator(self, np.num: int):
+    def get_random_gladiator(self):
         for i in range(5):
             r = random.randint(0, 20)
             if r <= 10:
@@ -23,4 +24,4 @@ class Team:
             else:
                 self.gladiators.append(SpearMan)
 
-    print(self.gladiators[num])
+        print(self.gladiators[num])
