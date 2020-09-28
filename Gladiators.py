@@ -23,7 +23,7 @@ class Gladiators(Person):
         self.toughness = toughness  # how much damage the gladiator can withstand.
 
     def printinfo(self):
-        print("Gladiator info")
+        print("\n", self.__class__.__name__ + " info")
         print("Name: " + str(self.name))
         print("Age: " + str(self.age))
         print("Stats: " + str(self.weapon_type), ", Weapon damage: " + str(self.weapon_dmg), ", Toughness: " + str(self.toughness))

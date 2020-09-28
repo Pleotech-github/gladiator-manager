@@ -2,25 +2,14 @@ import Gladiators
 import Person
 import SpearMan
 import random
+import SwordMan
 
-miniGladiator = Gladiators.Gladiators(Person.Person.name,
-                                      Person.Person.age,
-                                      Gladiators.Gladiators.weapon_type,
-                                      Gladiators.Gladiators.weapon_dmg,
-                                      Gladiators.Gladiators.toughness
-                                      )
-miniGladiator.printinfo()
+for r in range(3):
+    miniSpearman = SpearMan.SpearMan(SpearMan.Gladiators.name, SpearMan.Gladiators.age)
 
-miniSpearman1 = SpearMan.Gladiators(SpearMan.Gladiators.name, SpearMan.Gladiators.age, SpearMan.SpearMan.weapon_type,
-                                    random.randint(40, 60),
-                                    SpearMan.SpearMan.toughness)
-miniSpearman2 = SpearMan.Gladiators(SpearMan.Gladiators.name, SpearMan.Gladiators.age, SpearMan.SpearMan.weapon_type,
-                                    SpearMan.SpearMan.randomDamage(SpearMan.SpearMan.weapon_dmg),
-                                    SpearMan.SpearMan.toughness)
-miniSpearman3 = SpearMan.Gladiators(SpearMan.Gladiators.name, SpearMan.Gladiators.age, SpearMan.SpearMan.weapon_type,
-                                    SpearMan.SpearMan.randomDamage(SpearMan.SpearMan.weapon_dmg),
-                                    SpearMan.SpearMan.toughness)
+    miniSpearman.printinfo()
 
-miniSpearman1.printinfo()
-miniSpearman2.printinfo()
-miniSpearman3.printinfo()
+for r in range(3):
+    miniSwordMan = SwordMan.SwordMan(SwordMan.Gladiators.name, SwordMan.Gladiators.age)
+
+    miniSwordMan.printinfo()
