@@ -22,7 +22,3 @@ class SpearMan(Gladiators):
 
 class StoneSlinger(Gladiators):
     pass
-
-
-print(Gladiators.__dict__)
-print(SpearMan.__dict__)
