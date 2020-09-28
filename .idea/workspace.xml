@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="315bc8bd-25e7-4fb7-b3f9-fea73f9f56e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpearMan.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpearMan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwordMan.py" beforeDir="false" afterPath="$PROJECT_DIR$/SwordMan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Team.py" beforeDir="false" afterPath="$PROJECT_DIR$/Team.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601298346782</updated>
-      <workItem from="1601298348234" duration="216000" />
+      <workItem from="1601298348234" duration="595000" />
     </task>
     <servers />
   </component>
@@ -93,25 +91,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1601298564106">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1601298940839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601298564106" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1601298564106">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601298940839" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1601298940839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601298564106" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1601298564106">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601298940839" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1601298940839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601298564106" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1601298564106">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601298940839" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1601298940839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601298564106" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601298940839" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gladiator_manager$Main.coverage" NAME="Main Coverage Results" MODIFIED="1601298531101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/gladiator_manager$Team.coverage" NAME="Team Coverage Results" MODIFIED="1601298564097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gladiator_manager$Team.coverage" NAME="Team Coverage Results" MODIFIED="1601298763099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gladiator_manager$Main.coverage" NAME="Main Coverage Results" MODIFIED="1601298940831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

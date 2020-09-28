@@ -2,8 +2,8 @@ import random
 from Lanista import *
 import SwordMan
 import SpearMan
-from typing import List
-import numpy as np
+#from typing import List
+#import numpy as np
 
 
 class Team:
@@ -11,7 +11,7 @@ class Team:
     lanista = Lanista("Marcus", 42)
     gladiators = []
 
-    def __init__(self, name: str, lanista: Lanista, gladiators: List[Gladiator]):
+    def __init__(self, name: str, lanista: Lanista, gladiators: [Gladiator]):
         self.name = name
         self.lanista = lanista
         self.gladiators = gladiators
@@ -24,4 +24,4 @@ class Team:
             else:
                 self.gladiators.append(SpearMan)
 
-        print(self.gladiators[num])
+# print(gladiators)
