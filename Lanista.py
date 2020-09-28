@@ -1,11 +1,9 @@
 from Person import *
-from Gladiators import *
+import Gladiator
 
 
 class Lanista(Person):  # Lanista is a gladiator owner and trainer
-    __gladiators = []
 
-    def __init__(self, gladiators: list[Gladiators], exp: int, name, age):
+    def __init__(self, name, age):
         super().__init__(name, age)
-        self.__gladiators = gladiators
-        self.experience = exp
+# self.experience = exp

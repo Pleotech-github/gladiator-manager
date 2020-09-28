@@ -1,7 +1,8 @@
 from Person import *
+import random
 
 
-class Gladiators(Person):
+class Gladiator(Person):
     weapon_type = "Sword"
     # weapon_range: int,
     weapon_dmg = 10
@@ -22,8 +23,12 @@ class Gladiators(Person):
         self.weapon_dmg = weapon_dmg  # the amount of damage dealt to a enemy.
         self.toughness = toughness  # how much damage the gladiator can withstand.
 
+    def attack(self):
+        return self.weapon_dmg * random.random()
+
     def printinfo(self):
-        print("Gladiator info")
+        print("\n", self.__class__.__name__ + " info")
         print("Name: " + str(self.name))
         print("Age: " + str(self.age))
-        print("Stats: " + str(self.weapon_type), ", Weapon damage: " + str(self.weapon_dmg), ", Toughness: " + str(self.toughness))
+        print("Stats: " + str(self.weapon_type), ", Weapon damage: " + str(self.weapon_dmg),
+              ", Toughness: " + str(self.toughness))
