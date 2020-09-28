@@ -1,5 +1,5 @@
 class Person:  # a person who can be either Lanista or gladiator
-    name = "maximus"
+    name = "Maximus"
     age = "20"
 
     def __init__(self, name: str, age: int):
@@ -7,7 +7,7 @@ class Person:  # a person who can be either Lanista or gladiator
         self.age = age
 
     def printinfo(self):
-        print("person info")
+        print("Person info")
         print("Name: " + self.name)
         print("Age: " + str(self.age))
 
