@@ -3,7 +3,7 @@ import random
 from Gladiators import *
 
 
-class SwordMan(Gladiators):
+class SwordMan(Gladiators):  # the subclass of the gladiators, which is the type Sword warrior
     weapon_type = 'Sword'
     # weapon_range = random.randint(0, 5)
     weapon_dmg = random.randint(40, 60)
