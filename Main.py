@@ -1,7 +1,8 @@
 import SpearMan
 import SwordMan
 import Team
-#import numpy as np
+import numpy as np
+"""
 for r in range(3):
     miniSpearman = SpearMan.SpearMan(SpearMan.Gladiator.name, SpearMan.Gladiator.age)
 
@@ -12,4 +13,10 @@ for r in range(3):
 
     miniSwordMan.printinfo()
 
-Team.Team.get_random_gladiator()
+"""
+
+
+TeamUno = Team.Team(Team.Team.name, Team.Team.lanista, Team.Team.gladiators)
+
+
+

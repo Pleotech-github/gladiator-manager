@@ -22,21 +22,64 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Python.Main">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Fighting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gladiator-manager" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Annii\anaconda3\envs\opencv\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fighting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lanista" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gladiator-manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lanista.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gladiator-manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -46,19 +89,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Team" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SwordMan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gladiator-manager" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Annii\anaconda3\envs\opencv\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SwordMan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Team" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gladiator-manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Team.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -71,7 +134,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.SwordMan" />
         <item itemvalue="Python.Team" />
+        <item itemvalue="Python.Fighting" />
+        <item itemvalue="Python.Lanista" />
       </list>
     </recent_temporary>
   </component>
@@ -91,25 +157,53 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1601298940839">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1500" y="455" key="FileChooserDialogImpl" timestamp="1601450341175">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1500" y="455" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1601450341175" />
+    <state width="2334" height="401" key="GridCell.Tab.0.bottom" timestamp="1601458128294">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601298940839" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1601298940839">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2334" height="401" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1601458128294" />
+    <state width="2334" height="401" key="GridCell.Tab.0.center" timestamp="1601458128294">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601298940839" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1601298940839">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2334" height="401" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1601458128294" />
+    <state width="2334" height="401" key="GridCell.Tab.0.left" timestamp="1601458128293">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601298940839" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1601298940839">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2334" height="401" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1601458128293" />
+    <state width="2334" height="401" key="GridCell.Tab.0.right" timestamp="1601458128294">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601298940839" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gladiator_manager$Team.coverage" NAME="Team Coverage Results" MODIFIED="1601298763099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/gladiator_manager$Main.coverage" NAME="Main Coverage Results" MODIFIED="1601298940831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <state width="2334" height="401" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1601458128294" />
+    <state width="2334" height="491" key="GridCell.Tab.1.bottom" timestamp="1601457342129">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="2334" height="491" key="GridCell.Tab.1.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1601457342129" />
+    <state width="2334" height="491" key="GridCell.Tab.1.center" timestamp="1601457342129">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="2334" height="491" key="GridCell.Tab.1.center/0.0.3440.1400@0.0.3440.1400" timestamp="1601457342129" />
+    <state width="2334" height="491" key="GridCell.Tab.1.left" timestamp="1601457342129">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="2334" height="491" key="GridCell.Tab.1.left/0.0.3440.1400@0.0.3440.1400" timestamp="1601457342129" />
+    <state width="2334" height="491" key="GridCell.Tab.1.right" timestamp="1601457342129">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="2334" height="491" key="GridCell.Tab.1.right/0.0.3440.1400@0.0.3440.1400" timestamp="1601457342129" />
+    <state x="1221" y="345" key="SettingsEditor" timestamp="1601454093800">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1221" y="345" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1601454093800" />
+    <state x="1924" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1601454817924">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1924" y="320" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1601454817924" />
   </component>
 </project>
