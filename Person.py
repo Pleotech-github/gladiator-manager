@@ -7,7 +7,7 @@ class Person:  # a person who can be either Lanista or gladiator
         self.age = age
 
     def printinfo(self):
-        print("Person info")
+        print("\n", self.__class__.__name__ + " info")
         print("Name: " + self.name)
         print("Age: " + str(self.age))
 

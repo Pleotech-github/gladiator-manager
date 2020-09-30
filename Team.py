@@ -2,48 +2,29 @@ import random
 from Lanista import *
 import SwordMan
 import SpearMan
-#from typing import List
-#import numpy as np
 
 
 class Team:
     name = "Team"
-    lanista = Lanista("Marcus", 42)
     gladiators = []
+    names = ["Tom", "Sam", "Bob", "Loi", "Tommy", "Sammy", "Laban"]
 
-    def __init__(self, name: str, lanista: Lanista, gladiators: [Gladiator]):
+    def __init__(self, name: str, lanista: Lanista):
         self.name = name
         self.lanista = lanista
-        self.gladiators = gladiators
 
-    for i in range(2):
-        gladiators.append(SwordMan.SwordMan(SwordMan.Gladiator.name, SwordMan.Gladiator.age).printinfo())
+        for i in range(2):
+            self.gladiators.append(SwordMan.SwordMan(self.names[random.randint(0, len(self.names)-1)], 43))
 
+        for i in range(2):
+            self.gladiators.append(SpearMan.SpearMan(self.names[random.randint(0, len(self.names)-1)], 43))
 
-    for i in range(2):
-        gladiators.append(SpearMan.SpearMan(SpearMan.Gladiator.name, SpearMan.Gladiator.age).printinfo())
-
-
-
-    """
-    @classmethod
-    def get_random_gladiator(cls):
-        for i in range(5):
-            r = random.randint(0, 20)
-            if r <= 10:
-                cls.gladiators.append(SwordMan)
-            else:
-                cls.gladiators.append(SpearMan)
-    
-
-
-    def printteam(self):
+    def print_team(self):
         print("\n", self.__class__.__name__ + " info")
         print("Name: " + str(self.name))
-        print("Lanista: " + str(self.lanista))
-        print(self.gladiators)
+        print("Lanista: " + str(self.lanista.printinfo()))
+        for glad in self.gladiators:
+            glad.printinfo()
 
     def print_fighter(self, num: int):
-
-        print(self.gladiators[num])
-    """
+        self.gladiators[num].printinfo()

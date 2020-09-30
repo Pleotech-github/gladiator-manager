@@ -1,6 +1,8 @@
 import SpearMan
 import SwordMan
-import Team
+import Fighting
+import Team as Team
+import Lanista
 import numpy as np
 """
 for r in range(3):
@@ -16,7 +18,11 @@ for r in range(3):
 """
 
 
-TeamUno = Team.Team(Team.Team.name, Team.Team.lanista, Team.Team.gladiators)
+TeamUno = Team.Team("Team Uno", Lanista.Lanista("Alex", 26))
+TeamUno2 = Team.Team("Team Unoaa", Lanista.Lanista("Alex", 26))
 
 
+fight = Fighting.Fighting()
+fight.start_fight(TeamUno,TeamUno2)
+#fight.do_fight()
 
