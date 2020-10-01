@@ -11,24 +11,29 @@ class Gladiator(Person):
     def __init__ \
                     (self,
                      name: str,
-                     age: int,
+                     title: str,
                      weapon_type: str,
                      # weapon_range: int,
                      weapon_dmg: int,
                      toughness: int
                      ):
-        Person.__init__(self, name, age)
+        Person.__init__(self, name, random.randint(17, 27))
+        self.title = title
         self.weapon_type = weapon_type  # the type of weapon the gladiator wields.
         # self.weapon_range = weapon_range  # the range of tiles the gladiator can max reach.
         self.weapon_dmg = weapon_dmg  # the amount of damage dealt to a enemy.
+        self.health = 100
         self.toughness = toughness  # how much damage the gladiator can withstand.
 
     def attack(self):
-        return self.weapon_dmg * random.random()
+        return self.weapon_dmg * random.uniform(0.3, 1)
 
     def printinfo(self):
-        print("\n", self.__class__.__name__ + " info")
-        print("Name: " + str(self.name))
-        print("Age: " + str(self.age))
-        print("Stats: " + str(self.weapon_type), ", Weapon damage: " + str(self.weapon_dmg),
-              ", Toughness: " + str(self.toughness))
+        print("\t", self.__class__.__name__ + " info")
+        print("\t\tName: " + str(self.name), str(self.title))
+        print("\t\tAge: " + str(self.age))
+        print("\t\tStats: ")
+        print("\t\t\tWeapon type: " + str(self.weapon_type))
+        print("\t\t\tWeapon damage: " + str(self.weapon_dmg))
+        print("\t\t\tHealth: " + str(self.health))
+        print("\t\t\tToughness: " + str(self.toughness))

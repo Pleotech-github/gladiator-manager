@@ -1,22 +1,13 @@
-import SpearMan
-import SwordMan
+import Fighting
 import Team
-import numpy as np
-"""
-for r in range(3):
-    miniSpearman = SpearMan.SpearMan(SpearMan.Gladiator.name, SpearMan.Gladiator.age)
-
-    miniSpearman.printinfo()
-
-for r in range(3):
-    miniSwordMan = SwordMan.SwordMan(SwordMan.Gladiator.name, SwordMan.Gladiator.age)
-
-    miniSwordMan.printinfo()
-
-"""
+import Lanista
 
 
-TeamUno = Team.Team(Team.Team.name, Team.Team.lanista, Team.Team.gladiators)
+Team1 = Team.Team("The House of Horror")
+Team2 = Team.Team("The Brotherhood")
 
+Team1.printteam()
+Team2.printteam()
 
-
+fight = Fighting.Fighting()
+fight.start_fight(Team1, Team2)
