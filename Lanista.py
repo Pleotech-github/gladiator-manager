@@ -1,11 +1,15 @@
 from Person import *
-from Gladiators import *
+import random
 
 
 class Lanista(Person):  # Lanista is a gladiator owner and trainer
-    __gladiators = []
 
-    def __init__(self, gladiators: list[Gladiators], exp: int, name, age):
-        super().__init__(name, age)
-        self.__gladiators = gladiators
-        self.experience = exp
+    def __init__(self, name: str):
+        super().__init__(name, random.randint(20, 65))
+
+
+
+    def printinfo(self):
+        print("\n", self.__class__.__name__ + " info")
+        print("Name: " + str(self.name))
+        print("Age: " + str(self.age))

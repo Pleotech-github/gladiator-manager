@@ -1,15 +1,13 @@
-import Gladiators
-import Person
-import SpearMan
-import random
-import SwordMan
+import Fighting
+import Team
+import Lanista
 
-for r in range(3):
-    miniSpearman = SpearMan.SpearMan(SpearMan.Gladiators.name, SpearMan.Gladiators.age)
 
-    miniSpearman.printinfo()
+Team1 = Team.Team("The House of Horror")
+Team2 = Team.Team("The Brotherhood")
 
-for r in range(3):
-    miniSwordMan = SwordMan.SwordMan(SwordMan.Gladiators.name, SwordMan.Gladiators.age)
+Team1.printteam()
+Team2.printteam()
 
-    miniSwordMan.printinfo()
+fight = Fighting.Fighting()
+fight.start_fight(Team1, Team2)
