@@ -29,11 +29,10 @@ class Gladiator(Person):
         return self.weapon_dmg * random.uniform(0.3, 1)
 
     def printinfo(self):
-        print("\t", self.__class__.__name__ + " info")
-        print("\t\tName: " + str(self.name), str(self.title))
-        print("\t\tAge: " + str(self.age))
-        print("\t\tStats: ")
-        print("\t\t\tWeapon type: " + str(self.weapon_type))
-        print("\t\t\tWeapon damage: " + str(self.weapon_dmg))
-        print("\t\t\tHealth: " + str(self.health))
-        print("\t\t\tToughness: " + str(self.toughness))
+        print("\n\tNAME: \t" + str(self.name), str(self.title))
+        print("\tAGE: \t" + str(self.age) + " years")
+        print("\tSTATS: \t\t")
+        print("\t\tWEAPON TYPE: \t" + str(self.weapon_type))
+        print("\t\tWEAPON DAMAGE: \t" + str(self.weapon_dmg))
+        print("\t\tHEALTH: \t\t" + str(self.health))
+        print("\t\tTOUGHNESS: \t\t" + str(self.toughness))

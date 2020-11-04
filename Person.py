@@ -8,6 +8,6 @@ class Person:  # a person who can be either Lanista or gladiator
 
     def printinfo(self):
         print("Person info")
-        print("Name: " + self.name)
-        print("Age: " + str(self.age))
+        print("Name: \t\t" + self.name)
+        print("Age: \t\t" + str(self.age))
 

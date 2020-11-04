@@ -11,5 +11,5 @@ class Lanista(Person):  # Lanista is a gladiator owner and trainer
 
     def printinfo(self):
         print("\n", self.__class__.__name__ + " info")
-        print("Name: " + str(self.name))
-        print("Age: " + str(self.age))
+        print("Name: \t\t" + str(self.name))
+        print("Age: \t\t" + str(self.age))
