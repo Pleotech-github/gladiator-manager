@@ -2,6 +2,7 @@ import random
 from Lanista import *
 import SwordMan
 import SpearMan
+from collections import deque
 #from typing import List
 #import numpy as np
 
@@ -26,15 +27,18 @@ class Team:
         self.gladiators = []
 
         for i in range(2):
-            self.gladiators.append(SwordMan.SwordMan(self.names[random.randint(0, len(self.names)-1)],
-                                   (self.titles[random.randint(0, len(self.titles)-1)])))
+            randomName = random.randint(0, len(self.names) - 1)
+            randomTitle = random.randint(0, len(self.titles) - 1)
+            self.gladiators.append(SwordMan.SwordMan(self.names[randomName],
+                                   (self.titles[randomTitle])))
+
 
 
         for i in range(2):
-            self.gladiators.append(SpearMan.SpearMan(self.names[random.randint(0, len(self.names)-1)],
-                                   (self.titles[random.randint(0, len(self.titles)-1)])))
-
-
+            randomName = random.randint(0, len(self.names) - 1)
+            randomTitle = random.randint(0, len(self.titles) - 1)
+            self.gladiators.append(SpearMan.SpearMan(self.names[randomName],
+                                                     (self.titles[randomTitle])))
 
 
     def printteam(self):
@@ -43,6 +47,7 @@ class Team:
      #   self.lanista.printinfo()
         print("Gladiators:")
         print("Number of gladiators: " + str(len(self.gladiators)))
+        self.gladiators.sort(key=lambda x: x.name)
         for gladiators in self.gladiators:
             gladiators.printinfo()
         print("------------------------------------------------")
