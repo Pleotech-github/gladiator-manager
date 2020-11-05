@@ -1,6 +1,5 @@
 import Team
 import random
-from rich import print
 
 
 class Fighting:
@@ -14,7 +13,7 @@ class Fighting:
 
     def do_fight(self):
 
-        if random.randint(0, 2) == 1:
+        if random.randint(0, 1) == 1:
             dmg = round(self.gladiator1.attack()) - self.gladiator2.toughness
             print(self.gladiator1.name + " attacked and did " + str(dmg) + " damage.\n")
             self.gladiator2.health -= dmg

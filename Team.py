@@ -22,7 +22,7 @@ class Team:
             #Lanista.Lanista([random.randint(0, len(self.names)-1)])
         self.gladiators = []
 
-        for i in range(2):
+        for i in range(3):
             randomName = random.randint(0, len(self.names) - 1)
             randomTitle = random.randint(0, len(self.titles) - 1)
             self.gladiators.append(SwordMan.SwordMan(self.names[randomName],
@@ -30,7 +30,7 @@ class Team:
 
 
 
-        for i in range(2):
+        for i in range(3):
             randomName = random.randint(0, len(self.names) - 1)
             randomTitle = random.randint(0, len(self.titles) - 1)
             self.gladiators.append(SpearMan.SpearMan(self.names[randomName],
