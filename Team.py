@@ -2,9 +2,6 @@ import random
 from Lanista import *
 import SwordMan
 import SpearMan
-from collections import deque
-#from typing import List
-#import numpy as np
 
 
 class Team:
@@ -18,7 +15,6 @@ class Team:
               "the Glutenous"]
 
     lan_names = ["HEJEJEJEJE"]
-
 
     def __init__(self, name: str):
         self.name = name
@@ -42,15 +38,13 @@ class Team:
 
 
     def printteam(self):
-        print("\n", self.__class__.__name__ + " info")
-        print("Name: " + str(self.name))
+        print("\nINFO ABOUT: " + str(self.name) )
      #   self.lanista.printinfo()
-        print("Gladiators:")
-        print("Number of gladiators: " + str(len(self.gladiators)))
+        print("NUMBER OF GLADIATORS " + str(len(self.gladiators)))
         self.gladiators.sort(key=lambda x: x.name)
         for gladiators in self.gladiators:
             gladiators.printinfo()
-        print("------------------------------------------------")
+        print("\n------------------------------------------------")
 
 
     def print_fighter(self, num: int):
