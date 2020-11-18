@@ -1,10 +1,12 @@
 import socket
 
 text_bytes = 8
-port = 12345
 unicode = 'UTF-8'
-server = "PLACE IP-ADDRESS HERE"
+port = 5050
+server = socket.gethostbyname(socket.gethostname())  # place your own Ip adress here. can be found in cmd ipconfig or -
+# print
 adr_location = (server, port)
+
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(adr_location)
 
