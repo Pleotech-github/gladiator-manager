@@ -1,5 +1,5 @@
 import socket
-import _thread
+import threading
 
 
 def client(clientSckt, address):
@@ -24,4 +24,5 @@ serverSocket.listen(5)
 while True:
     print('Waiting for client')
     clientSocket, clientAddress = serverSocket.accept()
-    _thread.start_new_thread(client, (clientSocket, clientAddress))
+    thread = threading.Thread(target=client, args=(clientSocket, clientAddress))
+    print(f"[ACTIVE CONNECTIONS] {threading.activeCount() }")
