@@ -1,11 +1,14 @@
 import socket
 
+clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+serverAddress = ('localhost', 5000)
+print('Connecting to server')
 
-class Client:
-    server_socket = socket.socket()
-    host = socket.gethostbyname("localhost")
-    port = 12345
+clientSocket.connect(serverAddress)
 
-    server_socket.connect((host, port))
-    print(server_socket.recv(1024))
-    server_socket.close()
+try:
+    message = input()
+    message = message.encode()
+    clientSocket.send(message)
+finally:
+    clientSocket.close()

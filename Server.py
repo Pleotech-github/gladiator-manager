@@ -1,16 +1,21 @@
 import socket
+import sys
 
+serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+serverAddress = ('localhost',5000)
+print('Starting server')
+serverSocket.bind(serverAddress)
+serverSocket.listen(1)
 
-class Server:
-    server_socket = socket.socket()
-    host = socket.gethostbyname("localhost")
-    port = 12345
+while True:
+    print('Waiting for client')
+    connection, clientAddress = serverSocket.accept()
 
-    server_socket.bind((host, port))
-    server_socket.listen(5)
-    while True:
-        client, addr = server_socket.accept()
-        print("Got connection from " + str(addr))
-        client.send("Thank you for connecting".encode())
-        client.close()
-
+    try:
+        print('Client connected: ' + str(clientAddress))
+        while True:
+            data = connection.recv(16)
+            data = data.decode()
+            print(data)
+    finally:
+        connection.close()
