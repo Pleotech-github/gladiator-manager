@@ -5,7 +5,7 @@ import random
 class Gladiator(Person):
     weapon_type = "Sword"
     # weapon_range: int,
-    weapon_dmg = 10
+    weapon_dmg = 100
     toughness = 50
 
     def __init__ \
@@ -22,11 +22,11 @@ class Gladiator(Person):
         self.weapon_type = weapon_type  # the type of weapon the gladiator wields.
         # self.weapon_range = weapon_range  # the range of tiles the gladiator can max reach.
         self.weapon_dmg = weapon_dmg  # the amount of damage dealt to a enemy.
-        self.health = 100
+        self.health = 60
         self.toughness = toughness  # how much damage the gladiator can withstand.
 
     def attack(self):
-        return self.weapon_dmg * random.uniform(0.3, 1)
+        return self.weapon_dmg * random.uniform(0.9, 1)
 
     def printinfo(self):
         print("\n\tNAME: \t" + str(self.name), str(self.title))

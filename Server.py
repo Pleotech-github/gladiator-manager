@@ -9,14 +9,18 @@ import sys
 import Fighting
 import Team
 
+
 clients = 0
 sockets = []
+
 
 def broadcast(data):
         for s in sockets:
             s.send(str.encode(data))
 
 teams = []
+fights = []
+
 
 def initiate(c):
     if c == 1:
@@ -43,7 +47,7 @@ def initiate(c):
         print(output)
     if c == 2:
         fight = Fighting.Fighting()
-        fight.start_fight(teams[0], teams[1])
+        fights.append(fight)
 
 def client(clientSckt, address):
     sockets.append(clientSckt)
@@ -53,8 +57,15 @@ def client(clientSckt, address):
         while True:
             data = clientSckt.recv(1024)
             data = data.decode()
-            print(data)
-            broadcast(data)
+            if sockets[fights[0].turns(False)] == clientSckt:
+                old_stdout = sys.stdout
+                new_stdout = io.StringIO()
+                sys.stdout = new_stdout
+                fights[0].start_fight(teams[0], teams[1])
+                output = new_stdout.getvalue()
+                sys.stdout = old_stdout
+                broadcast(output)
+                print(output)
             if not data:
                 break
         clientSckt.close()
@@ -74,4 +85,3 @@ while True:
         clientSocket, clientAddress = serverSocket.accept()
         _thread.start_new_thread(client, (clientSocket, clientAddress))
         clients = clients + 1
-

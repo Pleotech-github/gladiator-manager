@@ -5,7 +5,7 @@ import random
 class Fighting:
     team1 = ""
     team2 = ""
-
+    turn = 0
     gladiator1 = "Gladiator_1"
     gladiator2 = "Gladiator_2"
 
@@ -67,15 +67,21 @@ class Fighting:
                 print("\n" + t2.name + " HAVE WON THE FIGHT")
             return -1, -1
 
+    def turns(self,action):
+        if action:
+            if self.turn == 1:
+                self.turn = 0
+            else:
+                self.turn = 1
+        return self.turn
 
     def start_fight(self, t1: Team, t2: Team):
             index1, index2 = self.set_fighters(t1, t2)
-            while len(t1.gladiators) > 0 and len(t2.gladiators) > 0:
+            if len(t1.gladiators) > 0 and len(t2.gladiators) > 0:
                 print("\n\t--- Press ENTER to fight! ---")
-                input()
+                self.turns(True)
                 self.count_round()
                 self.do_fight()
-
                 if self.gladiator1.health <= 0:
                     del t1.gladiators[index1]
                     print("\n" + t1.name + " have " + str(len(t1.gladiators)) + " gladiators left.\n" + t2.name +
