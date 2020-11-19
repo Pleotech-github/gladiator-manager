@@ -38,8 +38,7 @@ class Team:
 
 
     def printteam(self):
-        print("\nINFO ABOUT: " + str(self.name) )
-     #   self.lanista.printinfo()
+        print("\nINFO ABOUT: " + str(self.name))
         print("NUMBER OF GLADIATORS " + str(len(self.gladiators)))
         self.gladiators.sort(key=lambda x: x.name)
         for gladiators in self.gladiators:
