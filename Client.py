@@ -6,9 +6,10 @@ print('Connecting to server')
 
 clientSocket.connect(serverAddress)
 
-try:
-    message = input()
-    message = message.encode()
-    clientSocket.send(message)
-finally:
-    clientSocket.close()
+while True:
+    try:
+        message = input()
+        message = message.encode()
+        clientSocket.send(message)
+    except:
+        print('Error')
