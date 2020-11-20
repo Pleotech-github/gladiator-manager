@@ -1,8 +1,6 @@
-import cmd
 import io
 import socket
 import _thread
-import subprocess
 import sys
 
 import Fighting

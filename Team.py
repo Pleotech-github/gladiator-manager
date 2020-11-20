@@ -1,4 +1,3 @@
-import random
 from Lanista import *
 import SwordMan
 import SpearMan
@@ -14,7 +13,7 @@ class Team:
               "the Chosen", "Potter", "Death Mane", "the Feral", "the Drake", "Dragonborn", "Ironfist", "the Betrayer",
               "the Glutenous"]
 
-    lan_names = ["HEJEJEJEJE"]
+    lan_names = [""]
 
     def __init__(self, name: str):
         self.name = name
