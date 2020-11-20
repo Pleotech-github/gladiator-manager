@@ -75,11 +75,11 @@ serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serverAddress = ('localhost', 5000)
 print('Starting server')
 serverSocket.bind(serverAddress)
-serverSocket.listen(5) # Server listes for clients that tries to call to the server
+serverSocket.listen(5)  # Server listes for clients that tries to call to the server
 
 while True:
     if clients <= 1:
         print('Waiting for client')
         clientSocket, clientAddress = serverSocket.accept()
-        _thread.start_new_thread(client, (clientSocket, clientAddress)) # creates so more than one client can connect.
-        clients = clients + 1 
+        _thread.start_new_thread(client, (clientSocket, clientAddress))  # creates so more than one client can connect.
+        clients = clients + 1

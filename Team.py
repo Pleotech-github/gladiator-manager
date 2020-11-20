@@ -18,23 +18,20 @@ class Team:
     def __init__(self, name: str):
         self.name = name
         self.lan_names = "Bob"
-            #Lanista.Lanista([random.randint(0, len(self.names)-1)])
+        # Lanista.Lanista([random.randint(0, len(self.names)-1)])
         self.gladiators = []
 
         for i in range(3):
             randomName = random.randint(0, len(self.names) - 1)
             randomTitle = random.randint(0, len(self.titles) - 1)
             self.gladiators.append(SwordMan.SwordMan(self.names[randomName],
-                                   (self.titles[randomTitle])))
-
-
+                                                     (self.titles[randomTitle])))
 
         for i in range(3):
             randomName = random.randint(0, len(self.names) - 1)
             randomTitle = random.randint(0, len(self.titles) - 1)
             self.gladiators.append(SpearMan.SpearMan(self.names[randomName],
                                                      (self.titles[randomTitle])))
-
 
     def printteam(self):
         print("\nINFO ABOUT: " + str(self.name))
@@ -43,7 +40,6 @@ class Team:
         for gladiators in self.gladiators:
             gladiators.printinfo()
         print("\n------------------------------------------------")
-
 
     def print_fighter(self, num: int):
         self.gladiators[num].printinfo()

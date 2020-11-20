@@ -16,7 +16,6 @@ print('Connecting to server')
 clientSocket.connect(serverAddress)
 _thread.start_new_thread(listener, (clientSocket,))
 
-
 while True:
     try:
         message = input()

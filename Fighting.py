@@ -27,15 +27,15 @@ class Fighting:
             print("REMAINING HEALTH:\n\t" + self.gladiator1.name + ": " + str(self.gladiator1.health))
             print("REMAINING HEALTH:\n\t" + self.gladiator2.name + ": " + str(self.gladiator2.health))
             print(
-                "\n"+self.gladiator2.name + " " + self.gladiator2.title + " from " + self.team2.name +
-                      "\nKILLED \n" + self.gladiator1.name + " " + self.gladiator1.title + " from " + self.team1.name)
+                "\n" + self.gladiator2.name + " " + self.gladiator2.title + " from " + self.team2.name +
+                "\nKILLED \n" + self.gladiator1.name + " " + self.gladiator1.title + " from " + self.team1.name)
 
         elif self.gladiator2.health <= 0:
             print("REMAINING HEALTH:\n\t" + self.gladiator1.name + ": " + str(self.gladiator1.health))
             print("REMAINING HEALTH:\n\t" + self.gladiator2.name + ": " + str(self.gladiator2.health))
             print(
-                "\n"+self.gladiator1.name + " " + self.gladiator1.title + " from " + self.team1.name +
-                      "\n\t\tHAVE KILLED \n" + self.gladiator2.name + " " + self.gladiator2.title + " from" + self.team2.name)
+                "\n" + self.gladiator1.name + " " + self.gladiator1.title + " from " + self.team1.name +
+                "\n\t\tHAVE KILLED \n" + self.gladiator2.name + " " + self.gladiator2.title + " from" + self.team2.name)
 
         else:
             print("REMAINING HEALTH:\n\t" + self.gladiator1.name + ": " + str(self.gladiator1.health))
@@ -57,8 +57,8 @@ class Fighting:
             self.team2 = t2
 
             print("\n" +
-                self.gladiator1.name + " " + self.gladiator1.title + " from " + t1.name + "\n\t\tVS \n" +
-                self.gladiator2.name + " " + self.gladiator2.title + " from " + t2.name)
+                  self.gladiator1.name + " " + self.gladiator1.title + " from " + t1.name + "\n\t\tVS \n" +
+                  self.gladiator2.name + " " + self.gladiator2.title + " from " + t2.name)
             return gladiator1index, gladiator2index
         else:
             if len(t1.gladiators) > 0:
@@ -67,7 +67,7 @@ class Fighting:
                 print("\n" + t2.name + " HAVE WON THE FIGHT")
             return -1, -1
 
-    def turns(self,action):
+    def turns(self, action):
         if action:
             if self.turn == 1:
                 self.turn = 0
@@ -76,21 +76,21 @@ class Fighting:
         return self.turn
 
     def start_fight(self, t1: Team, t2: Team):
-            index1, index2 = self.set_fighters(t1, t2)
-            if len(t1.gladiators) > 0 and len(t2.gladiators) > 0:
-                print("\n\t--- Press ENTER to fight! ---")
-                self.turns(True)
-                self.count_round()
-                self.do_fight()
-                if self.gladiator1.health <= 0:
-                    del t1.gladiators[index1]
-                    print("\n" + t1.name + " have " + str(len(t1.gladiators)) + " gladiators left.\n" + t2.name +
-                          " have " + str(len(t2.gladiators)) + " gladiators left.")
-                    print("\n\t\t******")
-                    index1, index2 = self.set_fighters(t1, t2)
-                if self.gladiator2.health <= 0:
-                    del t2.gladiators[index2]
-                    print("\n" + t1.name + " have " + str(len(t1.gladiators)) + " gladiators left.\n" + t2.name +
-                          " have " + str(len(t2.gladiators)) + " gladiators left.")
-                    print("\n\t\t******")
-                    index1, index2 = self.set_fighters(t1, t2)
+        index1, index2 = self.set_fighters(t1, t2)
+        if len(t1.gladiators) > 0 and len(t2.gladiators) > 0:
+            print("\n\t--- Press ENTER to fight! ---")
+            self.turns(True)
+            self.count_round()
+            self.do_fight()
+            if self.gladiator1.health <= 0:
+                del t1.gladiators[index1]
+                print("\n" + t1.name + " have " + str(len(t1.gladiators)) + " gladiators left.\n" + t2.name +
+                      " have " + str(len(t2.gladiators)) + " gladiators left.")
+                print("\n\t\t******")
+                index1, index2 = self.set_fighters(t1, t2)
+            if self.gladiator2.health <= 0:
+                del t2.gladiators[index2]
+                print("\n" + t1.name + " have " + str(len(t1.gladiators)) + " gladiators left.\n" + t2.name +
+                      " have " + str(len(t2.gladiators)) + " gladiators left.")
+                print("\n\t\t******")
+                index1, index2 = self.set_fighters(t1, t2)
